@@ -1,0 +1,87 @@
+.container {
+    height: 50px;
+    width: 33%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-horizontal {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-gap {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+#div_A {
+    width: auto;
+    height: 100px;
+    border: 1px solid blue;
+    flex-grow: 2;
+}
+#div_B {
+    /* width: auto; */
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    /* flex-grow: 2; */
+}
+
+#div_1 {
+    order: 2;
+}
+#div_2 {
+    order: 1;
+}
+
+.flex-basis {
+    display: flex;
+}
+
+.basis {
+    flex-basis: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.maior {
+    flex-grow: 1;
+}
+
+.menor {
+    flex-shrink: 2;
+}
+
+.auto-alinhamento {
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    border: 1px solid red;
+    margin-top: 20px;
+}
+
+.diferente {
+    align-self: center;
+    border: 1px solid green
+}

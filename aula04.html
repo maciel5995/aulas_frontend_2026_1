@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <form action="#">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+    </form>
+    <br>
+    <form action="#">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" value="Rodrigo Maciel">
+    </form>
+    <br>
+    <form action="#">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" value="Rodrigo Maciel" disabled>
+    </form>
+    <br>
+    <form action="#">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" name="nome" required>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" min="0" max="130" required>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="data">Escolha uma data</label>
+        <input type="date" id="data" name="data" required>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="senha">Digite a senha</label>
+        <input type="password" id="senha" name="senha" required>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <p>Escolha seu sistema operacional favorito:</p>
+
+        <input type="radio" id="windows" name="sistema" value="windows" checked>
+        <label for="windows">Windows</label><br>
+      
+        <input type="radio" id="linux" name="sistema" value="linux">
+        <label for="linux">Linux</label><br>
+      
+        <input type="radio" id="macos" name="sistema" value="macos">
+        <label for="macos">MacOS</label><br><br>
+      
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <p>Quais linguagens de programação você conhece?</p>
+
+        <input type="checkbox" id="c" name="linguagem" value="c">
+        <label for="c">C</label><br>
+      
+        <input type="checkbox" id="cpp" name="linguagem" value="cpp">
+        <label for="cpp">C++</label><br>
+      
+        <input type="checkbox" id="python" name="linguagem" value="python">
+        <label for="python">Python</label><br><br>
+      
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="arquivo">Selecione um arquivo</label><br>
+        <input type="file" name="arquivo" id="arquivo"><br><br>
+
+        <label for="arquivos">Selecione um ou mais arquivos</label><br>
+        <input type="file" name="arquivos[]" id="arquivos" multiple><br><br>        
+      
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="curso">Escolha um curso:</label>
+        <select id="curso" name="curso">
+            <option value="computacao">Engenharia de Computação</option>
+            <option value="software" selected>Engenharia de Software</option>
+            <option value="mecanica">Engenharia Mecânica</option>
+        </select> <br><br>     
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="curso">Escolha um curso:</label>
+        <select id="curso" name="curso" multiple>
+            <option value="computacao">Engenharia de Computação</option>
+            <option value="software">Engenharia de Software</option>
+            <option value="mecanica">Engenharia Mecânica</option>
+        </select> <br><br>     
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="mensagem">Mensagem</label><br>
+         <textarea name="mensagem" id="mensagem" cols="30" rows="2"></textarea> 
+         <br><br>   
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <fieldset>
+            <legend>Preferências</legend>        
+            <input type="checkbox" id="html" name="linguagem" value="html">
+            <label for="html">HTML</label><br>        
+            <input type="checkbox" id="css" name="linguagem" value="css">
+            <label for="css">CSS</label><br>        
+            <input type="checkbox" id="js" name="linguagem" value="js">
+            <label for="js">JavaScript</label>
+          </fieldset>
+         <br><br>   
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="http://localhost:3000/cadastro" method="post">
+        <label for="linguagem">Escolha uma linguagem:</label>
+        <input list="linguagens" id="linguagem" name="linguagem">
+      
+        <datalist id="linguagens">
+          <option value="C++">
+          <option value="Python">
+          <option value="JavaScript">
+        </datalist>
+         <br><br>   
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+
+    
+</body>
+</html>

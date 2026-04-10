@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Flex Box</title>
+    <link rel="stylesheet" href="styles_aula06_b.css">
+</head>
+<body>    
+    <div style="display: flex;">
+        <p style="padding: 20px;">A</p>
+        <p style="padding: 20px;">B</p>
+        <p style="padding: 20px;">C</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column;">
+        <span>Elemento A</span>
+        <span>Elemento B</span>
+        <span>Elemento C</span>
+    </div>
+
+    <div class="flex-wrap">
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+    </div>
+
+    <div class="flex-horizontal">
+        <div class="elemento"></div>
+    </div>
+
+    <div class="flex-gap">
+        <div class="elemento">A</div>
+        <div class="elemento">B</div>
+        <div class="elemento">C</div>
+    </div>
+    <div class="flex-gap">
+        <div class="elemento" id="div_1">A</div>
+        <div class="elemento" id="div_2">B</div>
+    </div>
+
+    <div class="flex-gap">
+        <div id="div_A">A</div>
+        <div id="div_B">B</div>
+    </div>
+
+    <div class="flex-basis">
+        <div class="basis">A</div>
+        <div class="basis maior">B</div>
+        <div class="basis">C</div>
+    </div>
+
+    <div class="flex-basis">
+        <div class="basis">A</div>
+        <div class="basis menor">B</div>
+        <div class="basis">C</div>
+    </div>
+
+    <div class="auto-alinhamento">
+        <div class="basis">A</div>
+        <div class="basis diferente">B</div>
+        <div class="basis">C</div>
+    </div>
+</body>
+</html>

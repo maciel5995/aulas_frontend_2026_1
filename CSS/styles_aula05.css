@@ -1,0 +1,272 @@
+h5 {
+    color: blue;
+    text-align: center;
+}
+
+.minha_classe {
+    color: red;
+}
+
+#id_1 {
+    color: red;
+}
+
+#id_2 {
+    color: blue;
+}
+
+.classe_1 {
+    color: green;
+}
+
+.classe-hexa-1 {
+    color: #1ce84c;
+}
+.classe-hexa-2 {
+    color: #1063a7;
+}
+
+.cores-rgb-1 {
+    color: rgb(255, 0, 0);
+}
+.cores-rgb-2 {
+    color: rgb(0, 255, 0);
+}
+
+.cores-rgba-1 {
+    color: rgb(255, 0, 0, 0.2);
+}
+.cores-rgba-2 {
+    color: rgb(0, 255, 0, 0.5);
+}
+.cores-rgba-3 {
+    color: rgb(0, 0, 255, 0.7);
+}
+
+.cores-hsl-1 {
+    color: hsl(0, 79%, 50%);
+}
+.cores-hsl-2 {
+    color: hsl(98, 79%, 46%);
+}
+.cores-hsl-3 {
+    color: hsl(219, 80%, 43%);
+}
+
+.background-color-1 {    
+    background-color: #ff0000;
+}
+.background-color-2 {
+    background-color: #1bc21b;
+}
+
+.background-image {
+    background-image: url("../assets/carro.jpg");
+    padding: 20px;
+    color: white;
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.width-height-1 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.width-height-2 {
+    height: 200px;
+    background-color: red;
+}
+
+.padding-1 {
+    padding: 20px;
+    margin: 0;
+}
+.padding-2 {   
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.padding-3 {
+    width: 70px;
+    border: 2px solid;
+    padding: 20px 10px 0px 5px;   /* top right bottom left*/
+}
+
+.padding-antes {
+    padding: 20px;
+    width: 140px;
+    margin: 0;
+}
+.padding-depois {
+    padding: 20px;
+    width: 140px;
+    box-sizing: border-box;
+}
+
+.border-geral {
+    width: 140px;
+    padding: 20px;  
+    border: 2px solid red;   
+}
+.border-individual {
+    width: 160px;
+    padding: 20px;  
+    border-left: 2px solid blue;  
+    border-bottom: 2px solid blue;  
+}
+.border-arredondada {
+    width: 200px;
+    padding: 20px;  
+    border: 2px solid grey;   
+    border-radius: 5px; 
+}
+
+.margin-1 {
+    width: 120px;
+    padding: 20px;
+    border: 2px solid red;
+    margin: 0; 
+}
+.margin-2 {
+    width: 120px;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 30px 0px 0px 0px; 
+}
+
+.text-align-1 {
+    text-align: left;
+}
+.text-align-2 {
+    text-align: center;
+}
+.text-align-3 {
+    text-align: right;
+}
+.text-align-4 {
+    text-align: justify;
+}
+
+.text-decorantion-1 {
+    text-decoration: underline;
+}
+.text-decorantion-2 {
+    text-decoration: line-through;
+}
+
+.text-transfom-1 {
+    text-transform: lowercase;
+}
+.text-transfom-2 {
+    text-transform: uppercase;
+}
+
+.letter-spacing-1 {
+    letter-spacing: normal;
+}
+.letter-spacing-2 {
+    letter-spacing: 5px;
+}
+
+.font-family-1 {
+    font-family: serif;
+}
+.font-family-2 {
+    font-family: sans-serif;
+}
+.font-family-3 {
+    font-family: monospace;
+}
+.font-family-4 {
+    font-family: cursive;
+}
+.font-family-4 {
+    font-family: fantasy;
+}
+
+.font-style-1 {
+    font-style: normal;
+}
+.font-style-2 {
+    font-style: italic;
+}
+.font-style-3 {
+    font-style: oblique;
+}
+
+.font-weight-100 {
+    font-weight: 100;
+}
+.font-weight-900 {
+    font-weight: 900;
+}
+
+.font-size-1 {
+    font-size: 12px;
+}
+.font-size-2 {
+    font-size: 20px;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.oculta-elemento {
+    display: none;
+}
+
+ .container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+.box {
+    width: 100px;
+    height: 100px;    
+} 
+
+.static {  
+    background-color: red;
+    position: relative;
+}
+.relative {   
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.absolute {    
+    background-color: green;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.fixed {   
+    background-color: yellow;
+    position: fixed;
+    top: 20px;
+    left: 300px;
+}
+
+.box-1 {
+    background-color: red;
+    position: relative;
+    z-index: 1;
+}
+.box-2 {
+    background-color: blue;
+    position: relative;
+    top: -40px;
+    z-index: 3;
+}
+.box-3 {
+    background-color: green;
+    position: relative;
+    top: -80px;
+    z-index: 2;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <style>
+        h3 {
+            color: red;
+        }
+        h4 {
+            display:none;
+        }
+        @media screen and (max-width:500px){
+            h3 {
+                color: blue;
+            }
+        }
+        @media screen and (min-width:450px){
+            h3 {
+                color: green;
+            }
+        }
+
+        @media screen and (orientation:landscape) {
+            h4 {
+                display: block;
+            }
+            h2 {
+                display: none;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <h3>responsividade mobile first</h3>
+        <h2>responsividade modo retrato</h2>
+        <h4>responsividade modo paisagem</h4>
+
+
+    </div>
+</body>
+</html>
