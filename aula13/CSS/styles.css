@@ -1,0 +1,28 @@
+#listaProdutos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#listaProdutos > li.item-lista {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  align-items: center;
+
+  width: 50%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.nome-produto {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
