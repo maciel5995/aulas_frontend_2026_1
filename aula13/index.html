@@ -2,33 +2,33 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>CRUD Produtos</title>
+  <title>Produtos + ViaCEP</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <script src="JS/scripts.js" defer></script>  
 </head>
 <body>
 
-<div class="container">
+  <div class="container">
+    <h1>Produtos</h1>
+    <!-- CONSULTA CEP -->
+    <div class="cep-box" style="display: none;">
+      <h2>Consulta de CEP</h2>
+      <input type="text" id="cep" placeholder="Digite o CEP">
+      <button id="btnBuscarCep">Buscar CEP</button>
+      <div id="resultadoCep" class="resultado-cep">
+        <p><strong>Rua:</strong> <span id="rua">-</span></p>
+        <p><strong>Bairro:</strong> <span id="bairro">-</span></p>
+        <p><strong>Cidade:</strong> <span id="cidade">-</span></p>
+        <p><strong>Estado:</strong> <span id="estado">-</span></p>
+      </div>
+    </div>
 
-  <h1>CRUD de Produtos</h1>
-
-  <form id="formProduto">
-
-    <input
-      type="text"
-      id="nome"
-      placeholder="Nome do produto"
-      required
-    >    
-
-    <button type="submit">
-      Salvar
-    </button>
-
-  </form>
-
-  <ul id="listaProdutos" class="lista"></ul>
-
-</div>
+    <!-- FORM PRODUTOS -->
+    <form id="formProduto">
+      <input type="text" id="nome" placeholder="Nome do produto" required>
+      <button type="submit">Salvar</button>
+    </form>
+    <ul id="listaProdutos" class="lista"></ul>
+  </div>
 </body>
 </html>
